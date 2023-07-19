@@ -1,0 +1,220 @@
+{
+	"id": "d815df4d-cdbb-439a-aebb-58ae0780ddaa",
+	"name": "PetStore",
+	"timestamp": "2023-07-19T08:54:03.352Z",
+	"collection_id": "28352473-de45ef36-6bb3-40c6-b62c-8d834c48e60d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-07-19T08:54:01.218Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "09901b91-3a20-4dd3-b17e-8155043c0d62",
+			"name": "Add a new pet to the store",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Верно 200": true
+			},
+			"testPassFailCounts": {
+				"Верно 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				525
+			],
+			"allTests": [
+				{
+					"Верно 200": true
+				}
+			]
+		},
+		{
+			"id": "1fa9b9d9-309e-4882-8ef4-ef3c067a4bdd",
+			"name": "Find pet by ID",
+			"url": "https://petstore.swagger.io/v2/pet/10",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код = 200": true,
+				"Статус питомца = available": true
+			},
+			"testPassFailCounts": {
+				"Статус код = 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Статус питомца = available": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Статус код = 200": true,
+					"Статус питомца = available": true
+				}
+			]
+		},
+		{
+			"id": "2004512f-8830-4b86-9319-22c68eeb18b8",
+			"name": "Update an existing pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 144,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Верно 200": true
+			},
+			"testPassFailCounts": {
+				"Верно 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				144
+			],
+			"allTests": [
+				{
+					"Верно 200": true
+				}
+			]
+		},
+		{
+			"id": "b508f457-0f9b-4f09-9b37-268b9ce54fe2",
+			"name": "Find pet by ID_update",
+			"url": "https://petstore.swagger.io/v2/pet/10",
+			"time": 144,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код = 200": true,
+				"Статус питомца = sold": true
+			},
+			"testPassFailCounts": {
+				"Статус код = 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Статус питомца = sold": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				144
+			],
+			"allTests": [
+				{
+					"Статус код = 200": true,
+					"Статус питомца = sold": true
+				}
+			]
+		},
+		{
+			"id": "4e1238f7-17d9-4c78-98db-0bf99b462375",
+			"name": "Deletes a pet",
+			"url": "https://petstore.swagger.io/v2/pet/10",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Верно 200": true
+			},
+			"testPassFailCounts": {
+				"Верно 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Верно 200": true
+				}
+			]
+		},
+		{
+			"id": "768eb251-c481-4db9-9a53-e13f3922ee20",
+			"name": "Find pet by ID_Delete",
+			"url": "https://petstore.swagger.io/v2/pet/10",
+			"time": 144,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Питомца нет = 404": true
+			},
+			"testPassFailCounts": {
+				"Питомца нет = 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				144
+			],
+			"allTests": [
+				{
+					"Питомца нет = 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1247,
+	"collection": {
+		"requests": [
+			{
+				"id": "09901b91-3a20-4dd3-b17e-8155043c0d62",
+				"method": "POST"
+			},
+			{
+				"id": "1fa9b9d9-309e-4882-8ef4-ef3c067a4bdd",
+				"method": "GET"
+			},
+			{
+				"id": "2004512f-8830-4b86-9319-22c68eeb18b8",
+				"method": "PUT"
+			},
+			{
+				"id": "b508f457-0f9b-4f09-9b37-268b9ce54fe2",
+				"method": "GET"
+			},
+			{
+				"id": "4e1238f7-17d9-4c78-98db-0bf99b462375",
+				"method": "DELETE"
+			},
+			{
+				"id": "768eb251-c481-4db9-9a53-e13f3922ee20",
+				"method": "GET"
+			}
+		]
+	}
+}
